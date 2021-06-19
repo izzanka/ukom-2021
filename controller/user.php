@@ -14,8 +14,8 @@ class User extends Connection{
 		$count = $query->num_rows;
 
 		if($count == 1){
-			session_start();
-			$_SESSION['nama_user'] = $user['nama_user'];
+		    session_start();
+		    $_SESSION['nama_user'] = $user['nama_user'];
 		    $_SESSION['level'] = $user['level'];
 		    $_SESSION['id'] = $user['id'];
 		    $_SESSION['login'] = true;
